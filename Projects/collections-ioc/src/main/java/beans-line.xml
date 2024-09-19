@@ -1,0 +1,30 @@
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd"
+>	
+
+
+
+
+
+<bean name="p1" class="com.iiht.line.Point">
+	<property name="x" value="2"></property>
+	<property name="y" value="4"></property>
+</bean>
+
+
+<bean name="p2" class="com.iiht.line.Point">
+	<property name="x" value="3"></property>
+	<property name="y" value="5"></property>
+</bean>
+
+
+<bean name="newLine" class="com.iiht.line.Line" autowire="byName">
+</bean>
+
+
+
+
+</beans>

@@ -1,0 +1,23 @@
+#spring.application.name=BootSecurityOAuth
+
+
+server:
+  port: 9091
+sprint:
+  application:
+    name: BootSecurityOAuth
+security:
+  oauth2:
+    client:
+      clientId: #add client id, removed due to git violation
+      clientSecret: #add client secret , removed due to secret id 
+      accessTokenUri: https://oauth2.googleapis.com/token
+      userAuthorizationUri: https://accounts.google.com/o/oauth2/auth
+      tokenName: oauth_token
+      authenticationScheme: query
+      clientAuthenticationScheme: form
+      scope:
+         - email
+         - profile
+    resource:
+      userInfoUri: https://www.googleapis.com/oauth2/v3/auth
